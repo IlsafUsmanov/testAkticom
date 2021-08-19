@@ -1,0 +1,68 @@
+.footer {
+    padding: 100px 0;
+    position: relative;
+    margin: 0 auto;
+    // &:before {
+    //     position: absolute;
+    //     top: -17px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+
+    //     content: url('../img/footer_border.png');
+    // }
+
+    &__wrapper {
+        width: 550px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        &:after {
+            position: absolute;
+            z-index: -1;
+            bottom: -179px;
+            transform: translateX(-50%);
+            content: url('../img/footer_leftborder.png');
+        }
+        &:before {
+            position: absolute;
+            z-index: -1;
+            bottom: -179px;
+            left: 296px;
+            content: url(../img/footer_rightborder.png);
+        }
+    }
+    &__link {
+
+        a {
+            color: #000;
+            font-size: 25px;
+            font-family: GeorgiaRegular;
+            text-decoration: none;
+            position: relative;
+            &:hover {
+                color: $main-color;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: url('../img/footer_activelink.png');
+                    top: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 150px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    &__gerb {
+        position: absolute;
+        left: 31%;
+        // bottom: 50%;
+        // transform: translateY(40%);
+        // left: 50%;
+        // transform: translateX(-50%);
+    }
+
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Angelica';
+    font-display: swap;
+    src: local('Angelica'),
+        url('../Angelica.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeorgiaRegular';
+    font-display: swap;
+    src: local('GeorgiaRegular'),
+        url('../fonts/GeorgiaRegular.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueCyrillic';
+    font-display: swap;
+    src: local('BebasNeueCyrillic'),
+        url('../fonts/BebasNeueCyrillic.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}

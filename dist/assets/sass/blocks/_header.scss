@@ -1,0 +1,70 @@
+.header {
+    min-height: 1180px;
+
+    &__gerb {
+        display: block;
+        width: 126px;
+        height: 140px;
+        margin: 0 auto;
+        margin-top: 30px;
+        position: relative;
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 74px;
+            content: url('../img/header_leftborder.png');
+        }
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 74px;    
+            content: url('../img/header_rightborder.png');
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-size: 120px;
+        font-family: Angelica;
+        color: $text-color;
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__subtitle {
+        font-size: 28px;
+        color: $text-color;
+        text-align: center;
+        padding-top: 20px;
+        font-family: GeorgiaRegular;
+
+    }
+    &__sky, &__city, &__people, &__column{
+        width: 1920px;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__city{
+        z-index: 2;
+    }
+
+    &__people{
+        z-index: 4;
+    }
+
+    &__column{
+        z-index: 6;
+    }
+
+}

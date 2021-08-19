@@ -1,0 +1,52 @@
+@import './libs/font';
+@import './base/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GeorgiaRegular';
+}
+body {
+    background: url('../img/background.png') no-repeat center;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto; 
+}
+
+.overlay {
+	position: fixed;
+    z-index: 8;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0, .8);
+}
+
+.video{
+    width: 720px;
+    height: 480px; 
+    position: relative;
+}
+
+.close {
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: -27px;
+    right: -25px;
+    cursor: pointer;
+}
+
+
+@import './blocks/header';
+@import './blocks/interactive';
+@import './blocks//congratulation';
+@import './blocks/footer';
+
+@import './blocks/media';
